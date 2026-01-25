@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post - Yash</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+
+    <!-- Markdown and Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="1.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner width-sixteen-col">
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/y.png" alt="Homepage">
+                        </a>
+                    </div>
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div>
+
+                <nav class="s-header__nav">
+                    <ul class="s-header__menu-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Experience</a></li>
+                        <li class="current"><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="s-header__contact">
+                        <a href="contact.html" class="btn btn--primary s-header__contact-btn">Let's Work Together</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- # site main content
+        ================================================== -->
+        <article id="content" class="s-content entry">
+
+            <div class="s-pageheader entry__header">
+                <div class="row">
+                    <div class="column xl-12">
+                        <h1 class="entry__title" id="blog-post-title">
+                            Loading...
+                        </h1>
+                        <div class="entry__meta" id="blog-post-meta">
+                            <!-- Meta info will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s-pagecontent entry__content">
+                <div class="row entry__media" id="blog-post-image">
+                    <!-- Cover image will be loaded here -->
+                </div>
+
+                <div class="row entry__primary width-narrower">
+                    <div class="column xl-12">
+                        <div id="blog-post-content" class="blog-content">
+                            <!-- Blog content will be loaded here -->
+                        </div>
+
+                        <!-- Post Tags -->
+                        <div class="blog-post-tags" id="blog-post-tags">
+                            <!-- Tags will be loaded here -->
+                        </div>
+
+                        <!-- Post Navigation -->
+                        <div class="post-nav" id="blog-post-nav">
+                            <!-- Navigation will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="row entry__primary width-narrower">
+                    <div class="column xl-12">
+                        <section class="comments-section" id="comments-section">
+                            <h2 class="comments-title">Comments</h2>
+                            
+                            <!-- Comment Form -->
+                            <form class="comment-form" id="comment-form" aria-label="Add a comment">
+                                <h3>Leave a Comment</h3>
+                                <div class="form-group">
+                                    <label for="comment-name">Name <span class="required">*</span></label>
+                                    <input type="text" id="comment-name" name="name" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment-email">Email <span class="required">*</span></label>
+                                    <input type="email" id="comment-email" name="email" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment-website">Website (optional)</label>
+                                    <input type="url" id="comment-website" name="website">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment-message">Comment <span class="required">*</span></label>
+                                    <textarea id="comment-message" name="message" rows="5" required aria-required="true"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="comment-notify" name="notify">
+                                        <span>Notify me of follow-up comments via email</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn--primary">Post Comment</button>
+                                <div id="comment-form-status" class="form-status" role="status" aria-live="polite"></div>
+                            </form>
+
+                            <!-- Comments List -->
+                            <div class="comments-list" id="comments-list">
+                                <!-- Comments will be loaded here -->
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <!-- # footer 
+        ================================================== -->
+        <footer class="s-footer">
+            <div class="row s-footer__content">
+                <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">
+                    <h3>About <a href="https://www.linkedin.com/in/yash-rathor-bb9aa7231/">Yash Rathor</a></h3>
+                    <p>
+                        Hi, it's Yash Rathor. Welcome to my portfolio! I hope you find it insightful and engaging. Thank you for taking the time to explore my work. Your feedback is highly valued, so feel free to send any comments or suggestions to rathoryash1107@gmail.com.
+                    </p>
+                </div>
+                <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
+                    <h3>Site Links</h3>
+                    <ul class="link-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Experience</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="column xl-3 lg-6 md-12 tab-12 s-footer__block s-footer__newsletter">
+                    <h3>Contact Me via Email</h3>
+                    <p>Feel free to connect me through an email it might take little bit long but i will reply you surely</p>
+                </div>
+            </div>
+
+            <div class="row s-footer__bottom">
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/yash-rathor-bb9aa7231/" target="_blank" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M22.23 0H1.77C.79 0 0 .77 0 1.74v20.52C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.74V1.74C24 .77 23.21 0 22.23 0zm-5.1 20.4h-3.96v-6.43c0-1.53-.03-3.5-2.13-3.5-2.13 0-2.46 1.66-2.46 3.38v6.55H5.82V9h3.8v1.56h.05c.53-1 1.83-2.07 3.76-2.07 4.02 0 4.76 2.64 4.76 6.08v5.83zM3.58 7.55c-1.27 0-2.3-1.03-2.3-2.3 0-1.27 1.03-2.3 2.3-2.3 1.27 0 2.3 1.03 2.3 2.3 0 1.27-1.03 2.3-2.3 2.3zm1.98 12.85H1.6V9h3.96v11.4z"></path>
+                                </svg>
+                                <span class="u-screen-reader-text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/rathoryash7" target="_blank" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.867 8.166 6.839 9.491.5.09.682-.217.682-.482 0-.237-.01-1.02-.014-1.851-2.782.605-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.466-1.11-1.466-.908-.62.069-.607.069-.607 1.004.071 1.532 1.033 1.532 1.033.892 1.53 2.341 1.088 2.91.832.09-.647.35-1.088.636-1.338-2.22-.252-4.555-1.112-4.555-4.943 0-1.09.39-1.98 1.03-2.676-.103-.253-.447-1.27.098-2.646 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.845c.85.004 1.704.115 2.504.337 1.91-1.296 2.75-1.026 2.75-1.026.545 1.376.2 2.393.098 2.646.64.696 1.03 1.586 1.03 2.676 0 3.84-2.337 4.687-4.566 4.935.358.31.678.92.678 1.854 0 1.338-.012 2.42-.012 2.75 0 .268.18.576.688.479C19.135 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path>
+                                </svg>
+                                <span class="u-screen-reader-text">GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© Copyright Yash Rathor 2024</span>
+                    </p>
+                </div>
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top" aria-label="Back to top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1">
+                            <polyline points="17 11 12 6 7 11"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="6"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/blog-post.js"></script>
+    <script src="js/comments.js"></script>
+
+</body>
+</html>
+

@@ -18,6 +18,9 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/enhancements.css">
 
     <!-- favicons
     ================================================== -->
@@ -68,7 +71,7 @@
                     <ul class="s-header__menu-links">
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Experience</a></li>
-                        <li class="current"><a href="blog.html">Projects</a></li>
+                        <li class="current"><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul> <!-- s-header__menu-links -->
 
@@ -91,20 +94,47 @@
                 <div class="row">
                     <div class="column xl-12">
                         <h1 class="page-title">
-                            <span class="page-title__small-type text-pretitle">Programs</span>
-                            Projects
+                            <span class="page-title__small-type text-pretitle">Blog</span>
+                            Latest Articles & Projects
                         </h1>
+                        <p class="lead" style="margin-top: 2rem;">
+                            Explore my latest thoughts, projects, and insights on technology, development, and innovation.
+                        </p>
                     </div>
                 </div>
             </section>
 
             <section class="s-pagecontent pagecontent">
 
+                <!-- Blog Filters and Search -->
+                <div class="row blog-filters">
+                    <div class="column xl-12">
+                        <div class="blog-search-container">
+                            <input type="search" 
+                                   id="blog-search" 
+                                   class="blog-search-input" 
+                                   placeholder="Search articles..." 
+                                   aria-label="Search blog posts">
+                            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        
+                        <div class="blog-filter-buttons">
+                            <button class="blog-category-filter active" data-category="all">All</button>
+                            <button class="blog-category-filter" data-category="experience">Experience</button>
+                            <button class="blog-category-filter" data-category="projects">Projects</button>
+                            <button class="blog-category-filter" data-category="productivity">Productivity</button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="column xl-12 grid-block">
-
-                        <!-- <div class="grid-full">         -->
-                        <div class="grid-full grid-list-items">
+                        <div class="grid-full grid-list-items" id="blog-posts-container">
+                            <!-- Blog posts will be dynamically loaded here -->
+                        </div>
 
                             <div class="grid-list-items__item blog-card">
                                 <div class="blog-card__header">
@@ -252,36 +282,8 @@
 
                 <!-- pagination -->
                 <div class="row navigation pagination">
-                    <div class="column xl-12">
-                        <nav class="pgn">
-                            <ul>
-                                <li>
-                                    <a class="pgn__prev" href="#0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24">
-                                            <path
-                                                d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li><a class="pgn__num" href="#0">1</a></li>
-                                <li><span class="pgn__num current">2</span></li>
-                                <li><a class="pgn__num" href="#0">3</a></li>
-                                <li><a class="pgn__num" href="#0">4</a></li>
-                                <li><a class="pgn__num" href="#0">5</a></li>
-                                <li><span class="pgn__num dots">…</span></li>
-                                <li><a class="pgn__num" href="#0">8</a></li>
-                                <li>
-                                    <a class="pgn__next" href="#0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24">
-                                            <path
-                                                d="M11.293 17.293l1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div class="column xl-12" id="blog-pagination">
+                        <!-- Pagination will be dynamically generated here -->
                     </div> <!-- end column -->
                 </div> <!-- end pagination -->
 
@@ -456,6 +458,8 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/blog.js"></script>
 
 </body>
 
