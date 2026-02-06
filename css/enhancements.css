@@ -1,28 +1,10 @@
 /**
  * Portfolio Enhancements
  * Modern UI/UX improvements, animations, and accessibility enhancements
+ * 
+ * Note: This file extends portfolio-refined.css with additional enhancements
+ * Make sure portfolio-refined.css is loaded before this file
  */
-
-/* ============================================
-   CSS Variables for Consistent Theming
-   ============================================ */
-:root {
-    --color-primary: #97b34a;
-    --color-primary-dark: #7a9339;
-    --color-primary-light: #b8d46a;
-    --color-text: #333;
-    --color-text-muted: #666;
-    --color-bg: #fff;
-    --color-bg-card: #fff;
-    --color-bg-muted: #f5f5f5;
-    --color-border: #e0e0e0;
-    --spacing-unit: 1rem;
-    --border-radius: 8px;
-    --transition-speed: 0.3s;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
 
 /* ============================================
    Smooth Animations
@@ -408,4 +390,5 @@ img[loading="lazy"].loaded {
         scroll-behavior: auto !important;
     }
 }
+
 
